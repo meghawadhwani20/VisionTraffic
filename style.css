@@ -1,0 +1,55 @@
+/* GLOBAL */
+html, body, [class*="css"] {
+    background: radial-gradient(circle at top, #0f2f22, #050b08);
+    color: #eafff4;
+}
+
+/* SIDEBAR */
+section[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #0c2018, #08130f);
+    border-right: 1px solid rgba(34,227,138,0.15);
+}
+
+/* CARDS */
+.glass {
+    background: rgba(15, 40, 30, 0.55);
+    border-radius: 18px;
+    padding: 24px;
+    border: 1px solid rgba(34,227,138,0.18);
+    box-shadow: 0 0 40px rgba(34,227,138,0.08);
+    backdrop-filter: blur(18px);
+}
+
+/* HEADINGS */
+.h-title {
+    font-size: 56px;
+    font-weight: 800;
+}
+
+.green {
+    color: #22e38a;
+}
+
+/* BUTTONS */
+.stButton > button {
+    background: linear-gradient(135deg, #1fcf82, #22e38a);
+    color: black;
+    border-radius: 14px;
+    font-weight: 600;
+    height: 48px;
+}
+
+/* METRIC CARDS */
+.metric {
+    font-size: 36px;
+    font-weight: 800;
+    color: #22e38a;
+}
+
+/* TABLE */
+table {
+    border-collapse: collapse;
+}
+td, th {
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
