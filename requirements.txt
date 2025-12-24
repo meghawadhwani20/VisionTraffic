@@ -6,6 +6,9 @@ joblib
 matplotlib
 requests
 requests-toolbelt
+streamlit-option-menu
+
+
 
 
 
