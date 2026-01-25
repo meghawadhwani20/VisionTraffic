@@ -571,7 +571,11 @@ elif page == "Analytics":
             # --- Data Processing ---
             # Convert timestamp to datetime (Fix for format error)
             # Handling DD-MM-YYYY HH:MM or similar formats with dayfirst=True
-            df_hist['timestamp'] = pd.to_datetime(df_hist['timestamp'], dayfirst=True)
+            df_hist['timestamp'] = pd.to_datetime(
+                df_hist['timestamp'],
+                format="%Y-%m-%d %H:%M:%S",
+                errors="coerce"
+            )
             
             # Extract Hour
             df_hist['hour'] = df_hist['timestamp'].dt.hour
@@ -730,3 +734,4 @@ elif page == "Live Data":
                 
     else:
         st.info("Click the button above to fetch the latest real-time traffic data.")
+
