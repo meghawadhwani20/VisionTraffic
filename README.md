@@ -6,13 +6,20 @@ Vision Traffic is an end-to-end analytical platform designed to solve the proble
 </p>
 
 ## 1. The Problem 
-###**The Friction:** Real-time traffic maps show current status, but they lack the historical context needed to predict future congestion. This leads to inefficient resource deployment for logistics and emergency services.
-###**The Objective:** To transition from reactive monitoring to proactive traffic management by identifying predictable patterns in speed degradation and vehicle density.
+### The Friction:
+Real-time traffic maps show current status, but they lack the historical context needed to predict future congestion. This leads to inefficient resource deployment for logistics and emergency services.
+### The Objective:
+To transition from reactive monitoring to proactive traffic management by identifying predictable patterns in speed degradation and vehicle density.
 
 
 ## 2. Technical Pipeline & Data Engineering
 ### **A. Geospatial Transformation (SQL)**:
 To make the data human-readable, I developed a custom SQL transformation layer:
+
+<p align="center">
+  <img src="Live monitoring.png" width="900">
+</p> 
+
 #### **Dynamic Geo-Tagging:**
 Implemented CASE logic with Latitude/Longitude boundary filtering to map raw GPS points to 10 specific landmarks like the Taj Mahal, India Gate, and Mumbai Central.
 #### Database Optimization:
@@ -69,6 +76,13 @@ Calculated the percentage of vehicles moving below Free-Flow Speed to quantify t
   <img src="Dashboard.jpg" width="900">
 </p>
 
+<p align="center">
+  <img src="Analytics 1.png" width="900">
+</p>
+
+<p align="center">
+  <img src="Analytics 2.png" width="900">
+</p>
 
 ## 5. Tech Stack
 ### Analysis & ML:
