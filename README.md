@@ -30,34 +30,31 @@ Deployed a Random Forest model that analyzes the relationship between "Time of D
 
 
 ## 3. Project Structure
+
+```text
 Vision-Traffic/
 ├── app.py                        # Main Streamlit application
 ├── Home.py                       # Homepage and navigation logic
-│
 ├── vehicle_data.csv              # Historical traffic dataset
 ├── vehicle queries.sql           # SQL analysis and business queries
-│
 ├── traffic_level_model.pkl       # Traffic level prediction model
 ├── vehicle_count_model.pkl       # Vehicle count prediction model
 ├── location_ohe.pkl              # Location encoder
 ├── time_encoder.pkl              # Time encoder
 ├── date_encoder.pkl              # Date encoder
 ├── traffic_label_encoder.pkl     # Traffic label transformer
-│
 ├── Dashboard.jpg                 # Main dashboard screenshot
 ├── Homepage.png                  # Homepage UI
-├── Live monitoring.png           # Live traffic monitoring interface
+├── Live monitoring.png           # Live monitoring interface
 ├── Prediction.png                # Traffic prediction interface
-├── Analytics 1.png               # Analytical dashboard screenshot
+├── Analytics 1.png               # Analytics dashboard
 ├── Analytics 2.png               # Advanced analytics dashboard
-│
 ├── vdash.pbix                    # Power BI dashboard
 ├── requirements.txt              # Python dependencies
-├── style.css                     # Custom UI styling
-├── models.zip                    # Model backup/archive
-│
+├── style.css                     # Custom styling
+├── models.zip                    # Model archive
 └── README.md                     # Project documentation
-
+```
 
 
 ## 4. Key Outcomes & Insights 
