@@ -13,7 +13,13 @@ To transition from reactive monitoring to proactive traffic management by identi
 
 
 ## 2. Technical Pipeline & Data Engineering
-### **A. Geospatial Transformation (SQL)**:
+### A. Data Collection & Preprocessing
+#### Automated Ingestion: 
+Developed a Python-based ingestion engine to pull high-frequency traffic streams (speed, delay, and travel time) from the **TomTom Traffic API** for 10 diverse geographical locations.  
+### Statistical Cleaning:
+Utilized Jupyter Notebooks and Pandas to perform Exploratory Data Analysis (EDA), handling missing values and removing outliers from raw **JSON/CSV** feeds to ensure data integrity for downstream modeling. 
+
+### **B. Geospatial Transformation (SQL)**:
 To make the data human-readable, I developed a custom SQL transformation layer:
 
 <p align="center">
@@ -25,7 +31,7 @@ Implemented CASE logic with Latitude/Longitude boundary filtering to map raw GPS
 #### Database Optimization:
 Created a MySQL schema with indexed timestamps and location IDs, reducing query latency by **40%** for real-time dashboard updates.
 
-### B. Diagnostic & Predictive Analytics
+### C. Diagnostic & Predictive Analytics
 #### Peak Hour Identification: 
 Used SQL grouping to isolate the Top 3 Busiest Hours per location, uncovering a consistent **30%** slowdown after **7:00 PM** in high-density zones.
 #### The Forecasting Engine:
